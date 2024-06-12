@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment varl0011</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 <main>
 <header>
-    <h1>Rodion Varlamov</h1>
+    <h1 class="site-title">Rodion Varlamov</h1>
 </header>
 <article>
     <h2>About Me</h2>
@@ -20,7 +21,7 @@
 </blockquote>
 <section id="images">
     <h2>Image</h2>
-            <img src="images/photo.jpg"
+            <img id="my-image" src="images/photo.jpg"
             alt="photo">
 </section>
 <section id="hobbies">
@@ -31,13 +32,15 @@
         <li>Music</li>
     </ol>
 </section>
+<nav>
 <section id="links">
     <h2>Links</h2>
     <article>
         <h3>Notes Page Link</h3>
-        <p>Read the <a href="notes.html">notes page</a></p>
+        <p>Read the <a href="notes.html" id="notes-link">notes page</a></p>
     </article>
 </section>
+</nav>
 </main>
 <footer>
     <p><sup>©</sup> Copyright 2024 | All Rights Reserved</p>
