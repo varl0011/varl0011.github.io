@@ -23,5 +23,5 @@ header,footer {
 nav #links article a{
     text-decoration: none;
     border: 2px solid powderblue;
-    background-color: blue;
+    background-color: red;
 }
