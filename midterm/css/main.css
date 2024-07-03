@@ -12,7 +12,6 @@ body {
 .wrapper h1 {
     text-align: center;
     z-index: 1;
-    top: 1;
     margin-top: -10%;
     padding-bottom: 3.2%;
     font-size: 45px;
@@ -77,7 +76,7 @@ body {
     margin-right: 10px;
 }
 
-/* Aligns the bullet points with heading */
+/* Aligns the */
 .facts ul {
     padding-left: 20px;
 }
@@ -101,7 +100,7 @@ textarea {
     margin: 10px 0;
 }
 
-/* "Send" Button styles within forms */
+/* Button styles within forms */
 form button {
     background-color: transparent;
     border: 1px solid black;
@@ -115,7 +114,6 @@ form button {
     width: 10px;
     display: inline;
 }
-
 /* Footer styles, aligns text to the right and adds padding so that it's moved to the left a bit */
 footer {
     text-align: right;
