@@ -1,0 +1,103 @@
+body {
+    background-color: #AAD4CF;
+    margin: 0 10%;
+}
+
+.wrapper {
+    background-color: #D4E9E7;
+}
+
+.wrapper h1 {
+    text-align: center;
+    z-index: 1;
+    top: 1;
+    margin-top: -10%;
+    padding-bottom: 3.2%;
+    font-size: 45px;
+    color: white;
+}
+
+
+.wrapper .starfish-header {
+    width: 100%;
+    height: 250px;
+}
+
+.main {
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    background-color: #D4E9E7;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
+
+.navbar a:hover {
+    background-color: azure;
+}
+
+.navbar li:nth-child(2){
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.navbar li {
+    display: inline-block;
+    text-align: center;
+    min-width: 33%;
+}
+
+.starfish-image {
+    height: 200px;
+    width: 200px;
+    float: left;
+    clear: both;
+    margin-right: 10px;
+}
+
+/* Add Styles to Form */
+form {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+input, textarea {
+    border: 0px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.form-field {
+    margin: 10px 0;
+}
+
+form button {
+    background-color: transparent;
+    border: 1px solid black;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+}
+
+.options input {
+    width: 10px;
+    display: inline;
+}
+
+footer {
+    text-align: right;
+    padding: 10px;
+}
