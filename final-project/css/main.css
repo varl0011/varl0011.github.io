@@ -173,21 +173,23 @@ body {
     margin: 10px;
 }
 
-.services-big {
+.services-big, .services-small {
     background-color: rgb(255, 230, 172);
 }
 
-.services-content {
+/* Adding properties and values so that all the biege blocks are of the same settings */
+
+.biege-content {
     padding-left: 15px;
 }
 
-.services-content p {
+.biege-content p {
     margin: 0;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.services-content h2 {
+.biege-content h2 {
     font-size: 2rem;
     font-weight: 800;
 }
@@ -294,8 +296,6 @@ body {
 .team h2 {
     font-size: 2rem;
     font-weight: 800;
-    padding-bottom: 0;
-    margin-bottom: 0;
 }
 
 .team h3 {
