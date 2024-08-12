@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>varl0011 final-project</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/180d7ac76c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -14,23 +21,25 @@
     <div class="wrapper">
         <header>
             <nav class="navbar">
-                <h1><img src="images/logo.png" alt="Logo" class="logo"></h1>
                 <ul>
-                    <li class="highlight">Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Team</li>
-                    <li>Contact</li>
+                    <li class="active">
+                        <h1><img src="images/logo.png" alt="Logo" class="logo"></h1><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
                 <form>
                     <input type="text" placeholder="Search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </nav>
         </header>
         <!-- full width background image with a transparant Welcome page -->
         <div class="welcome-wrapper">
             <section class="welcome">
-                <img src="images/main-banner.jpg" alt="main" class="main">
+                <!-- <img src="images/main-banner.jpg" alt="main" class="main"> -->
                 <!-- div to place the content over the image -->
                 <div class="welcome-trans">
                     <h2>Welcome to Three Star Media</h2>
@@ -44,147 +53,184 @@
                     <button>Connect with us<i class="fa-solid fa-caret-right"></i></button>
                 </div>
             </section>
+            <div class="about-us-wrapper">
+                <section class="about-us-image"></section>
+                <section class="about-us-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis porro magni neque. Mollitia quas
+                        molestiae amet illum assumenda quod error quam corporis ratione harum exercitationem, fuga earum
+                        excepturi distinctio quaerat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis porro magni neque. Mollitia quas
+                        molestiae amet illum assumenda quod error quam corporis ratione harum exercitationem, fuga earum
+                        excepturi distinctio quaerat.</p>
+                </section>
+            </div>
         </div>
         <!-- each block has an image placed on top, black text and black buttons with white text -->
-        <div class="services-wrapper">
-            <h2>Our Services</h2>
-            <section class="digital">
-                <h3>Digital Transformation</h3>
-                <img src="images/digital.jpg" alt="digital-image" class="digital-image">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto saepe iste ad. Quis unde quia
-                    ipsam
-                    vitae
-                    repellendus temporibus possimus provident est dignissimos cupiditate deleniti, nulla odit culpa,
-                    laborum
-                    consequatur!</p>
-                <button>Digital Plans<i class="fa-solid fa-caret-right"></i></button>
-            </section>
-            <section class="marketing">
-                <h3>Marketing</h3>
-                <img src="images/marketing.jpg" alt="marketing-image" class="marketing-image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laborum commodi est fugiat sunt
-                    possimus
-                    laboriosam vitae exercitationem quisquam. Eos nesciunt vero animi voluptas commodi neque ipsam
-                    consectetur dolorem nemo?</p>
-                <button>Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
-            </section>
-            <section class="video-production">
-                <h3>Video Production</h3>
-                <img src="images/video.jpg" alt="video-image" class="video-image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur eligendi, voluptas
-                    voluptatibus et magni dignissimos minus, ad ex, illo itaque rem non vel quisquam nisi nesciunt
-                    tempore. Alias, recusandae?</p>
-                <button>Video Plans<i class="fa-solid fa-caret-right"></i></button>
-            </section>
-            <section class="web-development">
-                <h3>Web Development</h3>
-                <img src="images/web.jpg" alt="web-image" class="web-image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non, nostrum molestias dolore nam earum
-                    tempore, commodi repudiandae rem, minima placeat repellendus! Quidem tempore quam inventore
-                    voluptate aliquam sequi reprehenderit.</p>
-                <button>Web Plans<i class="fa-solid fa-caret-right"></i></button>
-            </section>
-            <section class="print">
-                <h3>Print</h3>
-                <img src="images/print.jpg" alt="print-image" class="print-image">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem perspiciatis officiis, error
-                    voluptatibus nisi voluptatem vero ad facilis facere magnam aperiam doloremque voluptates ut
-                    exercitationem soluta aliquam animi atque. Consectetur.</p>
-                <button>Print Plans<i class="fa-solid fa-caret-right"></i></button>
-            </section>
+        <div>
+            <h2 class="services-heading">Our Services</h2>
+            <div class="services-wrapper">
+                <section class="services-big">
+                    <div class="digital-image image-size"></div>
+                    <div class="services-content">
+                        <h2>Digital Transformation</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto saepe iste ad. Quis unde quia
+                            ipsam
+                            vitae
+                            repellendus temporibus possimus provident est dignissimos cupiditate deleniti, nulla odit
+                            culpa,
+                            laborum
+                            consequatur!</p>
+                        <button>Digital Plans<i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </section>
+                <section class="services-big">
+                    <div class="marketing-image image-size"></div>
+                    <div class="services-content">
+                        <h2>Marketing</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, laborum commodi est fugiat
+                            sunt
+                            possimus
+                            laboriosam vitae exercitationem quisquam. Eos nesciunt vero animi voluptas commodi neque
+                            ipsam
+                            consectetur dolorem nemo?</p>
+                        <button>Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </section>
+                
+                <div class="services-box-small">
+                    <section class="services-small">
+                        <div class="video-image image-size"></div>
+                        <div class="services-content">
+                            <h2>Video Production</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur eligendi,
+                                voluptas
+                                voluptatibus et magni dignissimos minus, ad ex, illo itaque rem non vel quisquam nisi
+                                nesciunt
+                                tempore. Alias, recusandae?</p>
+                            <button>Video Plans<i class="fa-solid fa-caret-right"></i></button>
+                        </div>
+                    </section>
+                    <section class="services-small">
+                        <div class="web-image image-size"></div>
+                        <div class="services-content">
+                            <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non, nostrum molestias dolore nam
+                            earum
+                            tempore, commodi repudiandae rem, minima placeat repellendus! Quidem tempore quam inventore
+                            voluptate aliquam sequi reprehenderit.</p>
+                        <button>Web Plans<i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                    </section>
+                    <section class="services-small">
+                        <div class="print-image image-size"></div>
+                        <div class="services-content">
+                            <h2>Print</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem perspiciatis officiis, error
+                            voluptatibus nisi voluptatem vero ad facilis facere magnam aperiam doloremque voluptates ut
+                            exercitationem soluta aliquam animi atque. Consectetur.</p>
+                        <button>Print Plans<i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                    </section>
+                </div>
+            </div>
             <section class="vision">
-                <h3>Our Vision</h3>
-                <img src="images/vision.jpg" alt="vision-image" class="vision-image">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at quas mollitia temporibus
+                <h2>Our Vision</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at quas mollitia
+                    temporibus
                     fugit, reprehenderit asperiores iure voluptas ipsum commodi est corporis adipisci alias tenetur
                     officia tempora, suscipit atque optio.</p>
                 <button>Learn More<i class="fa-solid fa-caret-right"></i></button>
             </section>
-        </div>
-        <!-- width is about 80% for each team member, black text, biege background and a bar-->
-        <div class="team">
-            <section class="John">
-                <img src="images/john.jpg" alt="john-image" class="john-image">
-                <h2>John Doe</h2>
-                <h3>CEO and Co-owner</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quia officia quidem corrupti
-                    nihil
-                    inventore sapiente a, cumque ipsum nobis molestiae? Repellendus nisi voluptates voluptate at
-                    distinctio
-                    optio eius quis.</p>
-            </section>
-            <section class="Bob">
-                <h2>Bob Rite</h2>
-                <h3>CEO and Co-owner</h3>
-                <img src="images/bob.jpg" alt="bob-image" class="bob-image">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique temporibus quia minima modi
-                    tenetur quo recusandae expedita quae, ad fugit eaque aut? Ratione aut ut tenetur quidem obcaecati,
-                    voluptates explicabo!</p>
-            </section>
-        </div>
-        <!-- block of code for a form with a black button and yellow text on it-->
-        <div class="contact-wrapper">
-            <section class="contact">
-                <h2>Contact Us</h2>
-                <h3>Send us a message</h3>
-                <form action="#">
-                    <div class="form-field">
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name">
+            <!-- width is about 80% for each team member, black text, biege background and a bar-->
+            <div class="team">
+                <section class="john">
+                    <div class="john-image image-size"></div>
+                    <div class="services-content">
+                    <h2>John Doe</h2>
+                    <h3>CEO and Co-owner</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quia officia quidem corrupti
+                        nihil
+                        inventore sapiente a, cumque ipsum nobis molestiae? Repellendus nisi voluptates voluptate at
+                        distinctio
+                        optio eius quis.</p>
                     </div>
-                    <div class="form-field">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                </section>
+                <section class="bob">
+                    <div class="bob-image image-size"></div>
+                    <div class="services-content">
+                    <h2>Bob Rite</h2>
+                    <h3>CEO and Co-owner</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique temporibus quia minima modi
+                        tenetur quo recusandae expedita quae, ad fugit eaque aut? Ratione aut ut tenetur quidem
+                        obcaecati,
+                        voluptates explicabo!</p>
                     </div>
-                    <div class="form-field">
-                        <label>Message</label>
-                        <textarea name="message" id="messsage" rows="6"></textarea>
-                    </div>
-                    <button type="submit">Send</button>
-                </form>
-            </section>
-            <!-- table contains 3 rows, thead is biege -->
-            <section class="hours">
-                <div>
-                    <h2>Hours of operation</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-            <!-- map -->
-            <section class="location">
-                <div>
-                    <h2>Location</h2>
-                    <iframe class="map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.914741718897!2d-75.76088505429654!3d45.34967278428904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1721828202121!5m2!1sen!2sca"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
-        </div>
-        <!-- full width copyright info, black background, yellow text -->
-        <footer>
-            <div class="copyright-info">
-                <p>&copy; Copyright Three Star Media, 2020</p>
-                <p>All images are taken from <u>Unsplash</u></p>
+                </section>
             </div>
-        </footer>
-    </div>
+            <!-- block of code for a form with a black button and yellow text on it-->
+            <div class="contact-wrapper">
+                <section class="contact">
+                    <h2>Contact Us</h2>
+                    <h3>Send us a message</h3>
+                    <form action="#">
+                        <div class="form-field">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-field">
+                            <label for="message">Message</label>
+                            <input type="message" name="message" id="messsage">
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </section>
+                <!-- table contains 3 rows, thead is biege -->
+                <section class="hours">
+                    <div>
+                        <h2>Hours of operation</h2>
+                        <table border="1px">
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <!-- map -->
+                <section class="location">
+                    <div>
+                        <h2>Location</h2>
+                        <iframe class="map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.914741718897!2d-75.76088505429654!3d45.34967278428904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1721828202121!5m2!1sen!2sca"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+            </div>
+            <!-- full width copyright info, black background, yellow text -->
+            <footer>
+                <div class="copyright-info">
+                    <p>&copy; Copyright Three Star Media, 2020</p>
+                    <p>All images are taken from <u>Unsplash</u></p>
+                </div>
+            </footer>
+        </div>
 </body>
 
 </html>

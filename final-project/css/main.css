@@ -1,0 +1,379 @@
+
+:root {
+    --primary-color: #C78B07;
+    --secondary-color: #222222;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navbar {
+    max-width: 1200px;
+    background-color: var(--secondary-color);
+
+}
+
+.navbar ul {
+    list-style: none;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    padding: 15px;
+}
+
+.navbar a:any-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    /* margin: 15px; */
+}
+
+.active a:any-link {
+    color: var(--secondary-color);
+}
+
+.active h1 {
+    text-align: left;
+}
+
+.navbar form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar input {
+    width: 90%;
+    height: 2rem;
+    margin: 0 0 10px 10px;
+}
+
+.navbar button {
+    font-size: 20px;
+    width: 5.99%;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px var(--primary-color) solid;
+    padding: 10px;
+    height: 2.4rem;
+    margin-bottom: 9px;
+}
+
+/* welcome block */
+
+.welcome {
+    background-image: url(../images/main-banner.jpg);
+    max-width: 1200px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+
+.welcome-trans {
+    background-color: #0000009f;
+    padding: 30px 10px 20px 10px;
+}
+
+.welcome-trans h2 {
+    color: white;
+    font-size: 4.6rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.welcome-trans p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.welcome-trans button {
+    background-color: var(--primary-color);
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+/* about-us block */
+
+.about-us-wrapper {
+    background-color: #FFE6AC;
+    max-width: 1200px;
+    min-height: 80vh;
+    /* adjust*/
+    padding-top: 10px;
+}
+
+.about-us-text {
+    padding: 20px;
+}
+.about-us-text p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.about-us-text h2 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.about-us-image {
+    background-image: url(../images/about-us.jpg);
+    margin: 0 20px 0 20px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+.image-size {
+    max-width: 1200x;
+    min-height: 80vh;
+}
+
+/* services block */
+
+.digital-image {
+    background-image: url(../images/digital.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.services-wrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+.services-wrapper button {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    margin: 15px 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.services-wrapper button i {
+    margin: 10px;
+}
+
+.services-big {
+    background-color: rgb(255, 230, 172);
+}
+
+.services-content {
+    padding-left: 15px;
+}
+
+.services-content p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.services-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.services-heading {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.marketing-image {
+    background-image: url(../images/marketing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-image {
+    background-image: url(../images/video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.web-image {
+    background-image: url(../images/web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.print-image {
+    background-image: url(../images/print.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services-box-small {
+    background-color: rgb(255, 230, 172);
+}
+
+.services-small {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1200px;
+}
+
+/* vision block */
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px 10px 0 10px;
+    margin-bottom: 10px;
+}
+
+.vision h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0;
+}
+
+.vision p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.vision button {
+    background-color: #112640;
+    padding: 30px;
+    margin: 15px 0;
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.vision button i {
+    margin: 10px;
+}
+
+/* team members block */
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1200px;
+}
+
+.team {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.team p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.team h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.team h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    border-bottom: #C78B07 solid 2px;
+}
+
+.john, .bob {
+    background-color: rgb(255, 230, 172);
+}
+
+.bob-image {
+    background-image: url(../images/bob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.john-image {
+    background-image: url(../images/john.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* search block */
+
+input{
+    border: 1px solid;
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.form-field {
+    margin: 10px 0;
+}
+
+/* table block*/
+
+td, th {
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+table {
+    min-width: 100%;
+    border-spacing: 0px;
+}
+
+th {
+    background-color: rgb(255, 230, 172);
+    font-weight: 400;
+}
+
+/* map block */
+
+.contact-wrapper {
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* footer block */
+
+footer {
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px ;
+}
+
+footer p {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+
