@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color: #C78B07;
+    --primary-color: #C78C06;
     --secondary-color: #222222;
 }
 
@@ -14,9 +14,13 @@ body {
     padding: 0;
 }
 
+/* assign max-width of 1200px to the container */
+
 .wrapper {
     max-width: 1200px;
 }
+
+/* use flex to have the logo in the left corner */
 
 .logo-wrapper {
     display: flex;
@@ -84,6 +88,8 @@ body {
 
 /* welcome block */
 
+/* assign flex to welcome block */
+
 .welcome {
     background-image: url(../images/main-banner.jpg);
     min-height: 80vh;
@@ -129,7 +135,6 @@ body {
 .about-us-wrapper {
     background-color: #FFE6AC;
     min-height: 80vh;
-    /* adjust*/
     padding-top: 10px;
 }
 
@@ -158,12 +163,16 @@ body {
     padding-top: 10px;
 }
 
+/* create image-size for the ease of use and convenience */
+
 .image-size {
     max-width: 100%;
     min-height: 80vh;
 }
 
 /* services block */
+
+/* use flex, brake down the block into two(big and small) in order to use it for desktop version */
 
 .digital-image {
     background-image: url(../images/digital.jpg);
@@ -195,7 +204,7 @@ body {
 }
 
 .services-big, .services-small {
-    background-color: rgb(255, 230, 172);
+    background-color: #ffe6ac;
 }
 
 /* Adding properties and values so that all the biege blocks are of the same settings, this class also be added to align some others blocks*/
@@ -253,7 +262,7 @@ body {
 }
 
 .services-box-small {
-    background-color: rgb(255, 230, 172);
+    background-color: #ffe6ac;
 }
 
 .services-small {
@@ -263,6 +272,9 @@ body {
 }
 
 /* vision block */
+
+/* make it stick out the services block and style the button*/
+
 .vision {
     background-image: url(../images/vision.jpg);
     background-size: cover;
@@ -301,6 +313,8 @@ body {
 
 /* team members block */
 
+/* assign flex to display propery and add a gap that is the same as in services block */
+
 .team {
     display: flex;
     flex-direction: column;
@@ -320,7 +334,7 @@ body {
 .team h3 {
     font-size: 1.2rem;
     font-weight: 800;
-    border-bottom: #C78B07 solid 2px;
+    border-bottom: var(--primary-color) solid 2px;
     margin-top: 0;
 }
 
@@ -329,7 +343,7 @@ body {
 }
 
 .john, .bob {
-    background-color: rgb(255, 230, 172);
+    background-color: #ffe6ac;
 }
 
 .bob-image {
@@ -345,6 +359,8 @@ body {
 }
 
 /* search block */
+
+/* flexbox for form fields and make textarea not resizable, make it higher */
 
 .contact {
     margin: 10px;
@@ -392,7 +408,7 @@ table {
 }
 
 th {
-    background-color: rgb(255, 230, 172);
+    background-color: #ffe6ac;
     font-weight: 400;
     border: 1px solid;
 }
@@ -404,8 +420,6 @@ td {
 tr {
     border: 1px solid;
 }
-
-/* map block */
 
 .contact-wrapper {
     padding: 10px;
@@ -446,7 +460,7 @@ footer p {
     }
 
     .wrapper {
-        max-width: 100vw;
+        max-width: 1200px;
     }
 
     .logo-wrapper {
@@ -454,6 +468,7 @@ footer p {
         width: 100%;
         background-color: var(--secondary-color);
     }
+    /* make navbar flex row in order to achieve the look of the given mockup */
 
     .navbar {
         display: flex;
@@ -476,6 +491,8 @@ footer p {
         display: flex;
         justify-content: center;
     }
+
+    /* change the font size of h2 */
 
     .welcome-trans h2 {
         font-size: 5.1rem;
@@ -565,7 +582,7 @@ footer p {
 
     .vision-desktop {
         margin: 0 auto;
-        max-width: 1200px;
+        width: 1200px;
         padding-left: 28.585px;
         padding-right: 28.585px;
     }
