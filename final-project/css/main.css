@@ -363,8 +363,10 @@ input{
     margin: 10px 0;
 }
 
-.contact form .form-field:nth-child(3) input{
+textarea {
     height: 150px !important;
+    resize: none;
+    width: 100%;
 }
 
 #submit {
@@ -375,6 +377,8 @@ input{
 
 /* table block*/
 
+/* making it collapse and adding border, biege background to th */
+
 td, th {
     margin: 0;
     padding: 10px;
@@ -383,12 +387,22 @@ td, th {
 
 table {
     min-width: 100%;
-    border-spacing: 0px;
+    border: 1px solid;
+    border-collapse: collapse;
 }
 
 th {
     background-color: rgb(255, 230, 172);
     font-weight: 400;
+    border: 1px solid;
+}
+
+td {
+    border: 1px solid;  
+}
+
+tr {
+    border: 1px solid;
 }
 
 /* map block */
@@ -396,6 +410,8 @@ th {
 .contact-wrapper {
     padding: 10px;
 }
+
+/* assign min height to iframe */
 
 iframe {
     width: 100%;
@@ -511,6 +527,8 @@ footer p {
         margin-right: 45px; 
     }
 
+    /* use big and small wrappers to place the blocks as depicted, 2 big on top and 3 below it */
+
     .services-wrapper {
         display: flex;
         flex-direction: column;
@@ -552,6 +570,8 @@ footer p {
         padding-right: 28.585px;
     }
 
+    /* use flex for team block to have the images and paragraphs placed diagonally against each other */
+
     .team {
         max-width: 1200px;
         gap: 0;
@@ -582,6 +602,8 @@ footer p {
         justify-content: center;
     }
 
+    /* use grid for contact-wrapper as it has table at the bottom */
+
     .contact-wrapper {
         max-width: 1200px;
         margin: 0 auto;
@@ -611,7 +633,11 @@ footer p {
         grid-area: i2;
     }
     
+    /* align footer p with the other blocks */
 
+    footer p {
+        margin-left: 155px;
+    }
 
 }
 
